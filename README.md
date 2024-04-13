@@ -7,10 +7,10 @@
 # Setup
 1. Vs code/Terminal Command Prompt, To create the ai environment: For win: type: python -m venv ai 
 2. To To activate the ai environment:
-    -For win : type : .\ai\Scripts\activate.bat ; Deactivate : replace activate -> deactivate
-    -For mac: type: source ai/bin/activate
+    -For win : type in command prompt: .\ai\Scripts\activate.bat ; Deactivate : replace activate -> deactivate
+    -For mac : type: source ai/bin/activate
 
-3. type pip3 install llama-index pypdf python-dotenv pandas (install python packages and dependencies)
+3. type in command prompt : pip3 install llama-index pypdf python-dotenv pandas (install python packages and dependencies)
 4. create .env file with OPENAI_API_KEY , get API key and insert
 
 # Create Agent
