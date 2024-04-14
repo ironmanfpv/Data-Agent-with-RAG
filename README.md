@@ -20,5 +20,4 @@
 
 7. Ctrl+Shift+P : Select Python interpreter --> choose Global, then run.
 8. To activate ai environment, In command prompt, type : .\ai\Scripts\activate
-9. Run pip install pylance
-10. Run pip Install llama_index
+9. Create note_engine.py
