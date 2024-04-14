@@ -5,9 +5,9 @@ import pandas as pd
 from llama_index.core.query_engine import PandasQueryEngine   # With llama_index.core.query engine call fixed.
 from prompts import new_prompt, instruction_str, context
 from note_engine import note_engine
-from llama_index.core.tools import QueryEngineTool, ToolMetadata
-from llama_index.core.agent import ReActAgent
-from llama_index.llms import openai
+from llama_index.core.tools import QueryEngineTool, ToolMetadata    #Updated Imports
+from llama_index.core.agent.react.base import ReActAgent            #Updated Imports
+from llama_index.llms.openai.base import OpenAI                     #Updated Imports
 
 #load the API keys
 load_dotenv() 
@@ -34,7 +34,7 @@ tools = [
     )
 ]
 
-llm = openai(model="gpt-3.5-turbo-0613") 
+llm = OpenAI(model="gpt-3.5-turbo-0613") 
 agent = ReActAgent.from_tools(tools, llm=llm, verbose=True, context=context)
 
 while(prompt:=input("Enter a prompt(q to quit): ")) != "q":
