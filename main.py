@@ -2,9 +2,7 @@
 from dotenv import load_dotenv
 import os
 import pandas as pd
-#import sys
-#sys.path.append("C:\Users\akita\Data-Agent-with-RAG\ai\Lib\site-packages\llama_index")
-from llama_index.core.query_engine import PandasQueryEngine   #With llama_index. query engine call fixed.
+from llama_index.core.query_engine import PandasQueryEngine   # With llama_index.core.query engine call fixed.
 from prompts import new_prompt, instruction_str
 
 #load the API keys
