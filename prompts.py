@@ -1,4 +1,4 @@
-from llama_index import PromptTemplate
+from llama_index.core import PromptTemplate
 
 #Instruction String ; to tell engine what to do with PANDAS data
 instruction_str = """\
